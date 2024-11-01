@@ -10,5 +10,3 @@ vim.keymap.set('n', '<C-b>', '<Cmd>Neotree toggle<CR>')
 vim.keymap.set('n', '<Leader>b', ':Telescope buffers<CR>')
 
 vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
-
