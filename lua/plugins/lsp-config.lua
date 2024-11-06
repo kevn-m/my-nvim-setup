@@ -29,7 +29,7 @@ return {
       })
 
       lspconfig.solargraph.setup({
-        cmd = { "bundle", "exec", "solargraph", "stdio" },
+        cmd = { "solargraph", "stdio" },
         root_dir = lspconfig.util.root_pattern("Gemfile", ".git"),
         file_types = { "ruby" },
         settings = {
@@ -37,7 +37,7 @@ return {
             diagnostics = true,
             completion = true,
             formatting = true,
-            useBundler = true,
+            useBundler = false,
           }
         },
         init_options = {
