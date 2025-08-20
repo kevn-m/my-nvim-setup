@@ -22,8 +22,8 @@ vim.keymap.set('n', '<leader>yp', function()
 end, { desc = 'Copy relative file path' })
 
 -- Terminal toggle
-vim.keymap.set('n', '<leader>tt', ':ToggleTerm<CR>', { desc = 'Toggle terminal' })
-vim.keymap.set('n', '<leader>tf', ':ToggleTerm direction=float<CR>', { desc = 'Toggle floating terminal' })
+vim.keymap.set('n', '<leader>tt', ':ToggleTerm dir=%:p:h<CR>', { desc = 'Toggle terminal' })
+vim.keymap.set('n', '<leader>tf', ':ToggleTerm direction=float dir=%:p:h<CR>', { desc = 'Toggle floating terminal' })
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
 vim.api.nvim_create_autocmd("TextYankPost", {
